@@ -1,0 +1,29 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+   
+        <title>HTML/JS Game</title>
+        <link rel="shortcut icon" href="../img/olin642.png">
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
+    <body>
+    <h2 class="spiel" >Mini Projekt fuer M347</h2>
+
+    <div class="text" style="text-align: center;">
+        <h3>Wilkommen bei POCU<br> Dies ist ein Spiel das mit JavaScript und HTML5 erstellt wurde.<br> 
+            In diesem Spiel geht es um den Krieg der Formen. Die Kreisen haben zu viel Macht gewonnen.<br> 
+            Du als Viereck musst sie stoppen und die Graden einsammeln.
+        </h3>
+    </div>
+    
+<!--<span id="x"></span> X <span id="y"></span> Y-->
+<div id='game_object' style='position: relative;' class="game">
+<canvas width='1600px' height='800px' id='backgroundCanvas' style='background: gray; position: absolute; top: 0px; left: 0px;'></canvas>
+<canvas width='1600px' height='800px' id='mainCanvas' style='position: absolute; top: 0px; left: 0px;' onmousemove='mouse("move",event)' onclick='mouse("click", event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+</div>
+<script type="text/javascript" src='app.js'></script>
+
+
+</body>
+</html>
